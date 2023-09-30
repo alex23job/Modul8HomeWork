@@ -39,6 +39,10 @@ namespace ListConsoleApp
             }
         }
 
+        /// <summary>
+        /// Удаление чисел из списка в задаваемом интервале
+        /// </summary>
+        /// <param name="list">список чисел</param>
         private static void RemoveRange(List<int> list)
         {
             string strInput = "";
@@ -88,6 +92,10 @@ namespace ListConsoleApp
             Console.WriteLine($"В диапазоне от {n_min} до {n_max} было удалено чисел : {cnt} шт.\n");
         }
 
+        /// <summary>
+        /// Вывод списка на консоль
+        /// </summary>
+        /// <param name="list">список чисел</param>
         private static void PrintList(List<int> list)
         {
             int i;
@@ -105,6 +113,10 @@ namespace ListConsoleApp
             Console.WriteLine();
         }
 
+        /// <summary>
+        /// Генерация и добавление в список 100 случайных чисел
+        /// </summary>
+        /// <param name="list">список чисел</param>
         private static void Generic100int(List<int> list)
         {
             int i;

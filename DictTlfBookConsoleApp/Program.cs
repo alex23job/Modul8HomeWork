@@ -50,12 +50,20 @@ namespace DictTlfBookConsoleApp
             }
         }
 
+        /// <summary>
+        /// Сохранение всех записей словаря в файл в формате Json
+        /// </summary>
+        /// <param name="dict">словарь записей</param>
         private static void SaveBook(Dictionary<string, string> dict)
         {
             string json = JsonConvert.SerializeObject(dict);
             File.WriteAllText("TlfBook.json", json);
         }
 
+        /// <summary>
+        /// Проверка наличия номера в словаре с выводом данных при их наличии
+        /// </summary>
+        /// <param name="dict">словарь записей</param>
         private static void CheckNumber(Dictionary<string, string> dict)
         {
             string strInput = "", val;
@@ -75,6 +83,10 @@ namespace DictTlfBookConsoleApp
             }
         }
 
+        /// <summary>
+        /// Вывод всех записей словаря на экран
+        /// </summary>
+        /// <param name="dict">словарь записей</param>
         private static void PrintDict(Dictionary<string, string> dict)
         {
             string s1 = "Телефон", s2 = "Владелец";
@@ -86,6 +98,10 @@ namespace DictTlfBookConsoleApp
             Console.WriteLine();
         }
 
+        /// <summary>
+        /// Ввод номера и данных владельца с последующим добавлением записи в словарь
+        /// </summary>
+        /// <param name="dict">словарь записей</param>
         private static void AddNumber(Dictionary<string, string> dict)
         {
             string s_num, s_fio, val;

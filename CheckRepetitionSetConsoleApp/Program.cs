@@ -42,6 +42,10 @@ namespace CheckRepetitionSetConsoleApp
             }
         }
 
+        /// <summary>
+        /// Генерация и добавление в множество 10 разных случайных чисел
+        /// </summary>
+        /// <param name="mySet">множество чисел</param>
         private static void Generate10Numbers(HashSet<int> mySet)
         {
             int i = 0, zn;
@@ -58,6 +62,10 @@ namespace CheckRepetitionSetConsoleApp
             }
         }
 
+        /// <summary>
+        /// Добавление числа в множество, введённого пользователем
+        /// </summary>
+        /// <param name="mySet">множество чисел</param>
         private static void AddNumber(HashSet<int> mySet)
         {
             string strInput;
@@ -77,6 +85,10 @@ namespace CheckRepetitionSetConsoleApp
             }
         }
 
+        /// <summary>
+        /// Вывод на консоль всех чисел множества
+        /// </summary>
+        /// <param name="mySet">множество чисел</param>
         private static void PrintSet(HashSet<int> mySet)
         {
             int i = 0;
@@ -95,6 +107,10 @@ namespace CheckRepetitionSetConsoleApp
             Console.WriteLine();
         }
 
+        /// <summary>
+        /// Проверка наличия в множестве номера, введённого пользователем
+        /// </summary>
+        /// <param name="mySet">множество чисел</param>
         private static void TestNumber(HashSet<int> mySet)
         {
             string strInput;
